@@ -17,7 +17,7 @@ app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 
 # Webhook настройки
-WEBHOOK_URL = "https://deploy-test-bot.onrender.com"  # URL твоего Render сервиса
+WEBHOOK_URL = "https://deploy-test-bot.onrender.com/"  # URL твоего Render сервиса
 PORT = int(os.environ.get("PORT", "10000"))   # Render задаёт порт через переменную окружения
 
 # Запуск webhook
